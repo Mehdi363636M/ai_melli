@@ -1,0 +1,37 @@
+{
+  "prompt": " red flower in map iran",
+  "providers": [
+    "pollinations",
+    "groq",
+    "gemini"
+  ],
+  "mode": "all",
+  "total_time": 7.77,
+  "consensus": "",
+  "responses": [
+    {
+      "provider": "gemini",
+      "desc": "Google Gemini",
+      "model": "gemini-2.0-flash",
+      "status": "error",
+      "error": "HTTP Error 402: Payment Required"
+    },
+    {
+      "provider": "groq",
+      "desc": "Groq (ultra-fast)",
+      "model": "llama-3.1-70b-versatile",
+      "status": "error",
+      "error": "HTTP Error 402: Payment Required"
+    },
+    {
+      "provider": "pollinations",
+      "desc": "Pollinations AI (free)",
+      "model": "openai",
+      "status": "success",
+      "text": "برای نشان‌دادن یک **گل قرمز** روی نقشه ایران، چند گزینهٔ ساده و کاربردی وجود دارد. در ادامه یک راهنمای کوتاه با دو روش مختلف (استفاده از Google Maps و استفاده از نرم‌افزار GIS) آورده شده است.\n\n---\n\n## 1. استفاده از Google Maps (ساده و سریع)\n\n1. **باز کردن Google Maps**  \n   به آدرس: https://www.google.com/maps بروید.\n\n2. **جستجوی مکان مورد نظر**  \n   اگر می‌خواهید گل قرمز را در یک شهر خاص یا موقعیت جغرافیایی خاص نشان دهید، نام شهر یا مختصات را در نوار جستجو وارد کنید و Enter کنید.\n\n3. **افزودن یک نقطه (Marker)**  \n   - روی نقشه کلیک راست (یا لمس و نگه‌داشتن در موبایل) کنید.  \n   - از منوی باز شده گزینه **“Add a missing place”** یا **“Add a marker”** را انتخاب کنید.  \n   - در پنجره‌ای که باز می‌شود، توضیح کوتاهی مثل *“Red flower”* را وارد کنید.\n\n4. **استفاده از نماد گل قرمز**  \n   - در بخش «Add a marker»، می‌توانید یک آیکون سفارشی انتخاب کنید.  \n   - اگر Google Maps امکان انتخاب آیکون گل قرمز را ندارد، می‌توانید تصویر گلی را دانلود کنید و به عنوان «Custom icon» آپلود کنید (این امکان در نسخهٔ موبایل وجود دارد).\n\n5. **اشتراک‌گذاری نقشه**  \n   - در نوار بالای صفحه، روی دکمه **Share** کلیک کنید.  \n   - لینک کوتاه یا embed code را دریافت کنید و آن را در وب‌سایت یا ایمیل خود قرار دهید.\n\n---\n\n## 2. استفاده از نرم‌افزار GIS (QGIS – رایگان و قدرتمند)\n\nاگر می‌خواهید نقشه‌ای حرفه‌ای‌تر ایجاد کنید و چندین نقطه یا لایهٔ مختلف داشته باشید، می‌توانید از QGIS استفاده کنید.\n\n### مراحل نصب و راه‌اندازی QGIS\n\n| گام | توضیح | لینک دانلود |\n|-----|-------|-------------|\n| 1 | دانلود QGIS (نسخهٔ آخر) | https://qgis.org/en/site/ |\n| 2 | نصب در سیستم عامل خود (Windows/Mac/Linux) |  |\n| 3 | راه‌اندازی برنامه و ایجاد پروژه جدید |  |\n\n### افزودن لایهٔ مختصات ایران\n\n1. **بارگذاری لایهٔ کشور (Shapefile یا GeoJSON)**  \n   - فایل shapefile ایران را از https://datahub.io/geo/countries | https://github.com/datasets/geo-countries دانلود کنید.  \n   - در QGIS، **Layer → Add Layer → Add Vector Layer** را انتخاب کنید و فایل را بارگذاری کنید.\n\n2. **افزودن نقطهٔ گل قرمز**  \n   - از منوی **Layer → Create Layer → New Shapefile Layer**، نوع `Point` را انتخاب کنید و فیلد `Name` (متن) اضافه کنید.  \n   - پس از ذخیره، روی لایه‌ی جدید راست‌کلیک کنید و **Toggle Editing** را فعال کنید.  \n   - ابزار **Add Feature** را انتخاب کنید و نقطه‌ای را روی نقشه قرار دهید (مختصات دقیق را می‌توانید از صفحهٔ Google Maps یا GPS گرفته و وارد کنید).",
+      "chars": 2326,
+      "words": 407,
+      "time": 7.77
+    }
+  ]
+}
