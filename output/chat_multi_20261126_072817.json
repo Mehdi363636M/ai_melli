@@ -1,0 +1,37 @@
+{
+  "prompt": "فارسی",
+  "providers": [
+    "pollinations",
+    "groq",
+    "gemini"
+  ],
+  "mode": "all",
+  "total_time": 0.51,
+  "consensus": "",
+  "responses": [
+    {
+      "provider": "gemini",
+      "desc": "Google Gemini",
+      "model": "gemini-2.0-flash",
+      "status": "error",
+      "error": "HTTP Error 402: Payment Required"
+    },
+    {
+      "provider": "groq",
+      "desc": "Groq (ultra-fast)",
+      "model": "llama-3.1-70b-versatile",
+      "status": "error",
+      "error": "HTTP Error 402: Payment Required"
+    },
+    {
+      "provider": "pollinations",
+      "desc": "Pollinations AI (free)",
+      "model": "openai",
+      "status": "success",
+      "text": "سلام! چطور می‌توانم کمکتان کنم؟",
+      "chars": 31,
+      "words": 5,
+      "time": 0.5
+    }
+  ]
+}
